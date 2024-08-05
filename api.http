@@ -1,0 +1,9 @@
+### todos los productos
+GET http://localhost:3000/products
+
+### productos fltrados por id
+GET http://localhost:3000/products/4
+
+
+### productos fltrados por nombre
+GET http://localhost:3000/products?name=Alitas
