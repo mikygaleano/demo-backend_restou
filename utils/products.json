@@ -1,0 +1,67 @@
+[
+    {
+      "id": 1,
+      "name": "Pizza Margherita",
+      "description": "Deliciosa pizza con salsa de tomate, mozzarella fresca y albahaca.",
+      "price": 10.99,
+      "image": "https://example.com/images/pizza-margherita.jpg",
+      "categories": ["Pizza", "Vegetariano"]
+    },
+    {
+      "id": 2,
+      "name": "Hamburguesa Clásica",
+      "description": "Jugosa hamburguesa con lechuga, tomate, queso cheddar y mayonesa.",
+      "price": 8.99,
+      "image": "https://example.com/images/hamburguesa-clasica.jpg",
+      "categories": ["Hamburguesa", "Carne"]
+    },
+    {
+      "id": 3,
+      "name": "Ensalada César",
+      "description": "Ensalada fresca con lechuga romana, crutones, parmesano y aderezo César.",
+      "price": 7.50,
+      "image": "https://example.com/images/ensalada-cesar.jpg",
+      "categories": ["Ensalada", "Vegetariano"]
+    },
+    {
+      "id": 4,
+      "name": "Sushi Roll de Salmón",
+      "description": "Roll de sushi con salmón fresco, aguacate y queso crema.",
+      "price": 12.99,
+      "image": "https://example.com/images/sushi-roll-salmon.jpg",
+      "categories": ["Sushi", "Pescado"]
+    },
+    {
+      "id": 5,
+      "name": "Tacos de Pollo",
+      "description": "Tacos con pollo marinado, cebolla, cilantro y salsa de tomate.",
+      "price": 9.99,
+      "image": "https://example.com/images/tacos-pollo.jpg",
+      "categories": ["Tacos", "Pollo"]
+    },
+    {
+      "id": 6,
+      "name": "Spaghetti Carbonara",
+      "description": "Espaguetis con salsa carbonara, panceta y queso parmesano.",
+      "price": 11.50,
+      "image": "https://example.com/images/spaghetti-carbonara.jpg",
+      "categories": ["Pasta", "Carne"]
+    },
+    {
+      "id": 7,
+      "name": "Helado de Vainilla",
+      "description": "Delicioso helado de vainilla con trozos de chocolate.",
+      "price": 4.50,
+      "image": "https://example.com/images/helado-vainilla.jpg",
+      "categories": ["Postre", "Vegetariano"]
+    },
+    {
+      "id": 8,
+      "name": "Sopa de Tomate",
+      "description": "Sopa cremosa de tomate con albahaca y un toque de crema.",
+      "price": 6.99,
+      "image": "https://example.com/images/sopa-tomate.jpg",
+      "categories": ["Sopa", "Vegetariano"]
+    }
+  ]
+  
