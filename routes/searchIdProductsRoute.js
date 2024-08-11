@@ -3,6 +3,6 @@ import { getSearchIdProducts } from '../controllers/getSearchIdProducts.js';
 
 const router = express.Router();
 
-router.get('/products/:id', getSearchIdProducts);
+router.get('/search/id/:id', getSearchIdProducts);
 
 export  default router;

@@ -3,8 +3,12 @@ import cors from 'cors';
 import { errorMiddleware } from './middleware/errorMiddleware.js';
 
 
-import productsRoute from './routes/productsRoute.js';
+import allproductsRoute from './routes/allproductsRoute.js';
 import searchIdProductsRoute from './routes/searchIdProductsRoute.js'
+import newProductsRoute from './routes/newProductsRoute.js'
+import searchNameProductsRouter from './routes/searchNameProductsRouter.js'
+
+
 
 const app = express();
 
@@ -14,8 +18,10 @@ app.use(express.json());
 app.use(errorMiddleware);
 
 // rutas
-app.use('/', productsRoute);
-app.use('/', searchIdProductsRoute);
+app.use('/products', allproductsRoute);
+app.use('/products', newProductsRoute);
+app.use('/products', searchIdProductsRoute);
+app.use('/products', searchNameProductsRouter)
 
 
 export {
