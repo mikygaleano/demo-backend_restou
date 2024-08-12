@@ -13,8 +13,9 @@ POST http://localhost:3000/products/new
 Content-Type: application/json
 
 {
-    "name": "milanesa napollitana",
-    "price": 5.99,
-    "description": "doble Tomato y mozzarella",
-    "categories": "milanesa"
+    "name": "milanesa napolitana",
+    "image_path": "./public/milanesa.jpg",
+    "price": 12.99,
+    "description": "milanesa con doble tomate y muzzaralla",
+    "categories": ["milanesa", "comida"]
 }
