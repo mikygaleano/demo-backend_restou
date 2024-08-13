@@ -7,6 +7,9 @@ import allproductsRoute from './routes/allproductsRoute.js';
 import searchIdProductsRoute from './routes/searchIdProductsRoute.js'
 import newProductsRoute from './routes/newProductsRoute.js'
 import searchNameProductsRouter from './routes/searchNameProductsRouter.js'
+import searchMaxPriceRoute from './routes/searchMaxPriceRoute.js'
+import searchMinPriceRoute from './routes/searchMinPriceRoute.js'
+
 
 
 
@@ -22,6 +25,9 @@ app.use('/products', allproductsRoute);
 app.use('/products', newProductsRoute);
 app.use('/products', searchIdProductsRoute);
 app.use('/products', searchNameProductsRouter)
+app.use('/products', searchMaxPriceRoute);
+app.use('/products', searchMinPriceRoute);
+
 
 
 export {

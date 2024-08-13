@@ -4,7 +4,7 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "test": "node test/testUpload.js",
+    "test": "node test/testNewProduct.js",
     "start": "nodemon server.js"
   },
   "author": "",
