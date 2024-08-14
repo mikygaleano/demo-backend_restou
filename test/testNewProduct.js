@@ -5,10 +5,10 @@ import fs from 'fs';
 async function testNewProduct() {
   try {
     const formData = new FormData();
-    formData.append('name', 'empanadas tucumanas');
-    formData.append('price', 8.25);
-    formData.append('description', 'empanadas rellenas de carne cortada a cuchillo');
-    formData.append('categories', JSON.stringify(['empanadas', 'comida']));
+    formData.append('name', 'milanesa común');
+    formData.append('price', 5.15);
+    formData.append('description', 'milanesa de carne de ternero');
+    formData.append('categories', JSON.stringify(['milanesa', 'comida']));
 
     // Ruta de la imagen
     const imagePath = './public/milanesa.jpg'; 

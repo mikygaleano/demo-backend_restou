@@ -2,17 +2,26 @@ import { turso } from "../config/config.js";
 
 
 const getProductsByName = async (req, res) => {
-  const { name } = req.query; // Obtener el nombre del query string
+  const { name, rango } = req.query; // Obtener el nombre del query string
 
   if (!name) {
     return res.status(400).json({ message: 'Nombre del producto es requerido' });
   }
 
   try {
+
+    let orderClause = ''; // Inicializa la cláusula de ordenamiento como vacía
+
+    // Determinar la cláusula de ordenamiento según el valor de "rango"
+    if (rango === 'min-price') {
+      orderClause = 'ORDER BY price ASC';
+    } else if (rango === 'max-price') {
+      orderClause = 'ORDER BY price DESC';
+    }
     // Consulta SQL para buscar productos por nombre
     // Ejecutar la consulta usando el cliente Turso
     const result = await turso.execute({
-      sql: `SELECT * FROM products WHERE LOWER(name) LIKE LOWER(?)`, 
+      sql: `SELECT * FROM products WHERE LOWER(name) LIKE LOWER(?) ${orderClause}`, 
       args: [`%${name}%`],
     });
 
